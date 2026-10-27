@@ -1,0 +1,24 @@
+[
+  {
+    "input_file_name": "sampleA.fasta",
+    "gene_symbol": "blaKPC-2",
+    "gene_name": "carbapenem-hydrolyzing class A beta-lactamase KPC-2",
+    "drug_class": "CARBAPENEM",
+    "sequence_identity": 99.8,
+    "coverage_percentage": 100.0,
+    "reference_database_id": "ncbi",
+    "reference_accession": "WP_004151302.1",
+    "analysis_software_name": "amrfinderplus"
+  },
+  {
+    "input_file_name": "sampleA.fasta",
+    "gene_symbol": "sul1",
+    "gene_name": "sulfonamide-resistant dihydropteroate synthase Sul1",
+    "drug_class": "SULFONAMIDE",
+    "sequence_identity": 100.0,
+    "coverage_percentage": 100.0,
+    "reference_database_id": "ncbi",
+    "reference_accession": "WP_001334822.1",
+    "analysis_software_name": "amrfinderplus"
+  }
+]

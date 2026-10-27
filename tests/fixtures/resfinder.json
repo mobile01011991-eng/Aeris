@@ -1,0 +1,36 @@
+[
+  {
+    "input_file_name": "sampleA.fasta",
+    "gene_symbol": "blaKPC-2",
+    "gene_name": "beta-lactamase KPC-2",
+    "drug_class": "carbapenem",
+    "antimicrobial_agent": "MEROPENEM",
+    "sequence_identity": 99.5,
+    "coverage_percentage": 100.0,
+    "reference_database_id": "resfinder",
+    "reference_accession": "NG_049243.1",
+    "analysis_software_name": "resfinder"
+  },
+  {
+    "input_file_name": "sampleA.fasta",
+    "gene_symbol": "aac(6')-Ib",
+    "gene_name": "aminoglycoside acetyltransferase",
+    "drug_class": "aminoglycoside",
+    "sequence_identity": 97.0,
+    "coverage_percentage": 95.0,
+    "reference_database_id": "resfinder",
+    "reference_accession": "NG_047341.1",
+    "analysis_software_name": "resfinder"
+  },
+  {
+    "input_file_name": "sampleA.fasta",
+    "gene_symbol": "tetA",
+    "gene_name": "tetracycline efflux",
+    "drug_class": "tetracycline",
+    "sequence_identity": 85.0,
+    "coverage_percentage": 90.0,
+    "reference_database_id": "resfinder",
+    "reference_accession": "NG_048168.1",
+    "analysis_software_name": "resfinder"
+  }
+]

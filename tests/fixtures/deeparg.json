@@ -1,0 +1,24 @@
+[
+  {
+    "input_file_name": "sampleA.fasta",
+    "gene_symbol": "blaTEM-1",
+    "gene_name": "TEM-1",
+    "drug_class": "beta-lactam",
+    "sequence_identity": 94.0,
+    "coverage_percentage": 88.0,
+    "reference_database_id": "deeparg",
+    "reference_accession": "deeparg_TEM",
+    "analysis_software_name": "deeparg"
+  },
+  {
+    "input_file_name": "sampleA.fasta",
+    "gene_symbol": "low_quality_hit",
+    "gene_name": "should_be_filtered",
+    "drug_class": "macrolide",
+    "sequence_identity": 70.0,
+    "coverage_percentage": 50.0,
+    "reference_database_id": "deeparg",
+    "reference_accession": "x",
+    "analysis_software_name": "deeparg"
+  }
+]

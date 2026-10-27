@@ -1,0 +1,24 @@
+[
+  {
+    "input_file_name": "sampleA.fasta",
+    "gene_symbol": "blaKPC",
+    "gene_name": "blaKPC",
+    "drug_class": "Beta-lactam",
+    "sequence_identity": 99.0,
+    "coverage_percentage": 98.0,
+    "reference_database_id": "argannot",
+    "reference_accession": "blaKPC",
+    "analysis_software_name": "abricate"
+  },
+  {
+    "input_file_name": "sampleA.fasta",
+    "gene_symbol": "aac6Ib",
+    "gene_name": "aac6Ib",
+    "drug_class": "Aminoglycosides",
+    "sequence_identity": 96.5,
+    "coverage_percentage": 92.0,
+    "reference_database_id": "argannot",
+    "reference_accession": "aac6Ib",
+    "analysis_software_name": "abricate"
+  }
+]

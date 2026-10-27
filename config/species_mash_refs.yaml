@@ -1,0 +1,66 @@
+# Reference assemblies used to build Mash sketches for species ID.
+# Accessions are NCBI RefSeq; build with: python scripts/build_species_mash_db.py
+
+sketch:
+  k: 21
+  sketch_size: 1000
+  # Mash distance at/under this → high-confidence species call
+  distance_threshold: 0.05
+  # Above this → treat as no reliable hit
+  max_distance: 0.12
+
+references:
+  - organism_id: escherichia_coli
+    display_name: Escherichia coli
+    accession: GCF_000005845.2
+    url: https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/005/845/GCF_000005845.2_ASM584v2/GCF_000005845.2_ASM584v2_genomic.fna.gz
+
+  - organism_id: klebsiella_pneumoniae
+    display_name: Klebsiella pneumoniae
+    accession: GCF_000240185.1
+    url: https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/240/185/GCF_000240185.1_ASM24018v2/GCF_000240185.1_ASM24018v2_genomic.fna.gz
+
+  - organism_id: salmonella_enterica
+    display_name: Salmonella enterica
+    accession: GCF_000006945.2
+    url: https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/006/945/GCF_000006945.2_ASM694v2/GCF_000006945.2_ASM694v2_genomic.fna.gz
+
+  - organism_id: enterobacter_cloacae
+    display_name: Enterobacter cloacae
+    accession: GCF_000025565.1
+    url: https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/025/565/GCF_000025565.1_ASM2556v1/GCF_000025565.1_ASM2556v1_genomic.fna.gz
+
+  - organism_id: pseudomonas_aeruginosa
+    display_name: Pseudomonas aeruginosa
+    accession: GCF_000006765.1
+    url: https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/006/765/GCF_000006765.1_ASM676v1/GCF_000006765.1_ASM676v1_genomic.fna.gz
+
+  - organism_id: acinetobacter_baumannii
+    display_name: Acinetobacter baumannii
+    accession: GCF_000746645.1
+    url: https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/746/645/GCF_000746645.1_ASM74664v1/GCF_000746645.1_ASM74664v1_genomic.fna.gz
+
+  - organism_id: staphylococcus_aureus
+    display_name: Staphylococcus aureus
+    accession: GCF_000013425.1
+    url: https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/013/425/GCF_000013425.1_ASM1342v1/GCF_000013425.1_ASM1342v1_genomic.fna.gz
+
+  - organism_id: staphylococcus_epidermidis
+    display_name: Staphylococcus epidermidis
+    accession: GCF_000007645.1
+    url: https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/007/645/GCF_000007645.1_ASM764v1/GCF_000007645.1_ASM764v1_genomic.fna.gz
+
+  - organism_id: enterococcus_faecium
+    display_name: Enterococcus faecium
+    accession: GCF_000174395.2
+    url: https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/174/395/GCF_000174395.2_ASM17439v2/GCF_000174395.2_ASM17439v2_genomic.fna.gz
+
+  - organism_id: enterococcus_faecalis
+    display_name: Enterococcus faecalis
+    accession: GCF_000007785.1
+    url: https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/007/785/GCF_000007785.1_ASM778v1/GCF_000007785.1_ASM778v1_genomic.fna.gz
+
+  - organism_id: neisseria_gonorrhoeae
+    display_name: Neisseria gonorrhoeae
+    accession: GCF_000006845.1
+    url: https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/006/845/GCF_000006845.1_ASM684v1/GCF_000006845.1_ASM684v1_genomic.fna.gz

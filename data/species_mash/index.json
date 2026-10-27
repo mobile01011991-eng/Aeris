@@ -1,0 +1,75 @@
+{
+  "k": 21,
+  "sketch_size": 1000,
+  "distance_threshold": 0.05,
+  "max_distance": 0.12,
+  "references": [
+    {
+      "organism_id": "escherichia_coli",
+      "display_name": "Escherichia coli",
+      "accession": "GCF_000005845.2",
+      "sketch": "sketches/escherichia_coli.msh"
+    },
+    {
+      "organism_id": "klebsiella_pneumoniae",
+      "display_name": "Klebsiella pneumoniae",
+      "accession": "GCF_000240185.1",
+      "sketch": "sketches/klebsiella_pneumoniae.msh"
+    },
+    {
+      "organism_id": "salmonella_enterica",
+      "display_name": "Salmonella enterica",
+      "accession": "GCF_000006945.2",
+      "sketch": "sketches/salmonella_enterica.msh"
+    },
+    {
+      "organism_id": "enterobacter_cloacae",
+      "display_name": "Enterobacter cloacae",
+      "accession": "GCF_000025565.1",
+      "sketch": "sketches/enterobacter_cloacae.msh"
+    },
+    {
+      "organism_id": "pseudomonas_aeruginosa",
+      "display_name": "Pseudomonas aeruginosa",
+      "accession": "GCF_000006765.1",
+      "sketch": "sketches/pseudomonas_aeruginosa.msh"
+    },
+    {
+      "organism_id": "acinetobacter_baumannii",
+      "display_name": "Acinetobacter baumannii",
+      "accession": "GCF_000746645.1",
+      "sketch": "sketches/acinetobacter_baumannii.msh"
+    },
+    {
+      "organism_id": "staphylococcus_aureus",
+      "display_name": "Staphylococcus aureus",
+      "accession": "GCF_000013425.1",
+      "sketch": "sketches/staphylococcus_aureus.msh"
+    },
+    {
+      "organism_id": "staphylococcus_epidermidis",
+      "display_name": "Staphylococcus epidermidis",
+      "accession": "GCF_000007645.1",
+      "sketch": "sketches/staphylococcus_epidermidis.msh"
+    },
+    {
+      "organism_id": "enterococcus_faecium",
+      "display_name": "Enterococcus faecium",
+      "accession": "GCF_000174395.2",
+      "sketch": "sketches/enterococcus_faecium.msh"
+    },
+    {
+      "organism_id": "enterococcus_faecalis",
+      "display_name": "Enterococcus faecalis",
+      "accession": "GCF_000007785.1",
+      "sketch": "sketches/enterococcus_faecalis.msh"
+    },
+    {
+      "organism_id": "neisseria_gonorrhoeae",
+      "display_name": "Neisseria gonorrhoeae",
+      "accession": "GCF_000006845.1",
+      "sketch": "sketches/neisseria_gonorrhoeae.msh"
+    }
+  ],
+  "failures": []
+}

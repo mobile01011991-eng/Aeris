@@ -1,0 +1,25 @@
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile.api
+    ports:
+      - "8000:8000"
+    volumes:
+      - amr-data:/app/work
+      - amr-db:/app/data
+    environment:
+      - AMR_DATABASE_URL=sqlite:////app/data/amr_results.db
+
+  web:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "8080:80"
+    depends_on:
+      - api
+
+volumes:
+  amr-data:
+  amr-db:

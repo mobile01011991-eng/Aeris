@@ -1,0 +1,130 @@
+# Organisms selectable in the UI + matching / AMRFinderPlus mapping.
+# confidence_threshold: Mash-derived confidence below this → uncertain (not hard mismatch).
+#
+# resfinder_species: PointFinder db_prefix from the ResFinder image
+# (/databases/pointfinder_db/config). These are NOT the AMRFinder keys — e.g.
+# Klebsiella pneumoniae maps to the genus-level "klebsiella" panel. null means
+# PointFinder has no database for that organism, so only -acq runs.
+
+confidence_threshold: 0.55
+
+organisms:
+  - id: escherichia_coli
+    display_name: Escherichia coli
+    group: Enterobacterales
+    aliases:
+      - Escherichia coli
+      - E. coli
+      - E coli
+      - Escherichia
+    amrfinder_organism: Escherichia
+    resfinder_species: escherichia_coli
+
+  - id: klebsiella_pneumoniae
+    display_name: Klebsiella pneumoniae
+    group: Enterobacterales
+    aliases:
+      - Klebsiella pneumoniae
+      - K. pneumoniae
+      - K pneumoniae
+      - Klebsiella
+    amrfinder_organism: Klebsiella_pneumoniae
+    resfinder_species: klebsiella
+
+  - id: salmonella_enterica
+    display_name: Salmonella enterica
+    group: Enterobacterales
+    aliases:
+      - Salmonella enterica
+      - Salmonella
+      - S. enterica
+    amrfinder_organism: Salmonella
+    resfinder_species: salmonella
+
+  - id: enterobacter_cloacae
+    display_name: Enterobacter cloacae
+    group: Enterobacterales
+    aliases:
+      - Enterobacter cloacae
+      - Enterobacter
+      - E. cloacae
+    amrfinder_organism: Enterobacter_cloacae
+    resfinder_species: null
+
+  - id: pseudomonas_aeruginosa
+    display_name: Pseudomonas aeruginosa
+    group: Non-fermenters
+    aliases:
+      - Pseudomonas aeruginosa
+      - P. aeruginosa
+      - Pseudomonas
+    amrfinder_organism: Pseudomonas_aeruginosa
+    resfinder_species: null
+
+  - id: acinetobacter_baumannii
+    display_name: Acinetobacter baumannii
+    group: Non-fermenters
+    aliases:
+      - Acinetobacter baumannii
+      - A. baumannii
+      - Acinetobacter
+    amrfinder_organism: Acinetobacter_baumannii
+    resfinder_species: null
+
+  - id: staphylococcus_aureus
+    display_name: Staphylococcus aureus
+    group: Gram-positive cocci
+    aliases:
+      - Staphylococcus aureus
+      - S. aureus
+      - Staphylococcus
+    amrfinder_organism: Staphylococcus_aureus
+    resfinder_species: staphylococcus_aureus
+
+  - id: staphylococcus_epidermidis
+    display_name: Staphylococcus epidermidis
+    group: Gram-positive cocci
+    aliases:
+      - Staphylococcus epidermidis
+      - S. epidermidis
+    amrfinder_organism: Staphylococcus_epidermidis
+    resfinder_species: null
+
+  - id: enterococcus_faecium
+    display_name: Enterococcus faecium
+    group: Enterococcus
+    aliases:
+      - Enterococcus faecium
+      - E. faecium
+      - Enterococcus
+    amrfinder_organism: Enterococcus_faecium
+    resfinder_species: enterococcus_faecium
+
+  - id: enterococcus_faecalis
+    display_name: Enterococcus faecalis
+    group: Enterococcus
+    aliases:
+      - Enterococcus faecalis
+      - E. faecalis
+    amrfinder_organism: Enterococcus_faecalis
+    resfinder_species: enterococcus_faecalis
+
+  - id: neisseria_gonorrhoeae
+    display_name: Neisseria gonorrhoeae
+    group: Other
+    aliases:
+      - Neisseria gonorrhoeae
+      - N. gonorrhoeae
+      - Neisseria
+    amrfinder_organism: Neisseria_gonorrhoeae
+    resfinder_species: neisseria_gonorrhoeae
+
+  - id: other_unknown
+    display_name: Other / Unknown
+    group: Unknown
+    aliases:
+      - Other
+      - Unknown
+      - unclassified
+    amrfinder_organism: null
+    resfinder_species: null

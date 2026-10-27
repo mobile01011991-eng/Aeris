@@ -1,0 +1,24 @@
+[
+  {
+    "input_file_name": "sampleA.fasta",
+    "gene_symbol": "KPC-2",
+    "gene_name": "KPC-2",
+    "drug_class": "carbapenem",
+    "sequence_identity": 100.0,
+    "coverage_percentage": 100.0,
+    "reference_database_id": "card",
+    "reference_accession": "ARO:3003993",
+    "analysis_software_name": "rgi"
+  },
+  {
+    "input_file_name": "sampleA.fasta",
+    "gene_symbol": "AAC(6')-Ib",
+    "gene_name": "AAC(6')-Ib",
+    "drug_class": "aminoglycoside antibiotic",
+    "sequence_identity": 98.2,
+    "coverage_percentage": 99.0,
+    "reference_database_id": "card",
+    "reference_accession": "ARO:3004621",
+    "analysis_software_name": "rgi"
+  }
+]

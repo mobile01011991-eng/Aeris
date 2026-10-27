@@ -1,0 +1,86 @@
+# AMR tool execution defaults — images matched to this machine where possible.
+work_dir: ./work
+docker:
+  enabled: true
+  network: bridge
+  pull_if_missing: false
+
+tools:
+  resfinder:
+    display_name: ResFinder
+    hamronize_name: resfinder
+    image: genomicepidemiology/resfinder:4.7.2
+    analysis_software_version: "4.7.2"
+    reference_database_version: "2.4.0"
+    raw_output_glob: "data_resfinder.json"
+    # ResFinder JSON already embeds metadata; hamronize CLI has no extra flags
+    hamronize_input_file_name: false
+
+  rgi:
+    display_name: CARD_RGI
+    hamronize_name: rgi
+    image: quay.io/biocontainers/rgi:6.0.3--pyha8f3691_0
+    analysis_software_version: "6.0.3"
+    reference_database_version: "4.0.1"
+    raw_output_glob: "rgi.txt"
+    hamronize_input_file_name: true
+    card_db_path: ./data/card_db
+
+  amrfinderplus:
+    display_name: AMRFinderPlus
+    hamronize_name: amrfinderplus
+    image: ncbi/amr:latest
+    analysis_software_version: "4.2.7"
+    reference_database_version: "2026-05-15.1"
+    raw_output_glob: "amrfinder.tsv"
+    hamronize_input_file_name: true
+
+  abricate:
+    display_name: ARG_ANNOT
+    hamronize_name: abricate
+    image: staphb/abricate:latest
+    analysis_software_version: "1.4.0"
+    reference_database_version: "argannot_2026"
+    raw_output_glob: "abricate_argannot.tsv"
+    hamronize_input_file_name: false
+
+  deeparg:
+    display_name: DeepARG
+    hamronize_name: deeparg
+    # Built from https://github.com/gaarangoa/deeparg (modern PyTorch runtime)
+    image: aeris-deeparg:latest
+    analysis_software_version: "modern"
+    reference_database_version: "HF_gaarangoa_deeparg"
+    raw_output_glob: "*.mapping.ARG"
+    hamronize_input_file_name: true
+    enabled: true
+    model: LS
+    # RTX 4060 / NVIDIA: cuda + expose the GPU to the DeepARG container
+    hf_device: cuda
+    gpus: all
+    hf_cache_path: ./data/hf_cache
+
+species_id:
+  # mash (default) → markers → speciator
+  prefer: mash
+  mash:
+    display_name: Mash
+    image: staphb/mash:2.3
+    db_path: ./data/species_mash
+    k: 21
+    sketch_size: 1000
+    distance_threshold: 0.05
+    max_distance: 0.12
+  speciator:
+    display_name: Speciator
+    # Optional: build from https://github.com/pathogenwatch-oss/speciator
+    image: speciator:latest
+    library_path: ./data/speciator_library
+    use_bash_redirect: true
+    interface: fasta
+
+consensus:
+  identity_threshold: 90.0
+  coverage_threshold: 80.0
+  majority_vote_threshold: 3
+  total_tools: 5

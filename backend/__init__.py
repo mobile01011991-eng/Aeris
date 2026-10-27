@@ -1,0 +1,1 @@
+"""AMR detection platform backend."""
