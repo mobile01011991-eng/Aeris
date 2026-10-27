@@ -17,4 +17,4 @@ data/resfinder_all.fsa
 data/beta-lactam.fsa
 data/extracted_genes.fasta
 data/species_mash/raw/
-data/card_db/rgi_autoload_jsaqrupa/variants
+data/card_db/
